@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+ <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+      <ul>
+        <li>My Online Shop</li>
+      </ul>
+    </nav>
+    <main>
+        <div class="side">
+           <select class="brand" name="" id="">
+           </select>
+            <div class="categorylist">
+                <span class="category"></span><hr>
+            </div>
+               <h4 class="price" >Filter by Price</h4>
+               <div class="range">
+                    <input type="range" id="range" >
+                    <span id="price"></span>
+               </div>
+               <button class="clearfilter">Clear filters</button>
+        </div>
+        <div class="main">
+            <div class="search">
+                <div class="found">
+                    <h5 class="result"> Results Found: </h5>
+                    <h5 class="item"></h5>
+                    <h5 class="no_found"></h5>
+                </div>
+                <input type="text" placeholder="search filtered products" class="search_product">
+                <div class="sortby">
+                    <h5>Sort By:</h5>
+                    <select name="" id="">
+                        <option value="">A-Z</option>
+                        <option value="">Price</option>
+                        <option value="">Latest</option>
+                        <option value="">Oldest</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main_content" id="main"> </div>
+           
+        </div>
+        
+        <div class="cart">
+            <div class="cart_header">
+                <h4>My Cart</h4>
+                <h4 class="cartCount">0</h4>
+            </div>
+            <hr>
+            <div class="hey">
+            <div id="cartContainer" class="main_cart">
+            </div>
+        </div>
+        <div class="all_total">
+            <div class="checkout">
+                <button class="btnCheckout">Checkout</button>
+                <button class="removeAll">Clear Cart</button>
+            </div>
+            <h3 id="total">Total</h3>
+        </div>
+    </div>
+    </main>
+</body>
+<script src="/index.js" type="module"></script>
+</html>
