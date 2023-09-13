@@ -129,7 +129,7 @@ const decrement = (id)=>{
   let searchByID = myCart.find(x => x.id === id)
 
   if(searchByID.qty === 1){
-      return loadCart(myCart.filter(c=> c.id !== id))
+      return
   }else{
       searchByID.qty -=1
   }
